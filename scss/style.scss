@@ -79,5 +79,37 @@ body {
     padding: 40px 30px;
     border-radius: $border-radius;
     background-color: $very-Dark-Magenta;
+    color: $Light-Grayish-Magenta;
+
+    p {
+      font-size: 0.85rem;
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 40px;
+        border-radius: 50%;
+      }
+      .user {
+        margin-top: 5px;
+        margin-left: 25px;
+
+        h3 {
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: $Soft-Pink;
+        }
+      }
+    }
   }
 }

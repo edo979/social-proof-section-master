@@ -15,9 +15,34 @@ body {
 }
 
 .container {
+  position: relative;
   min-width: 375px;
   padding: 75px 25px;
   background-color: white;
+}
+
+.container::before, .container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container::before {
+  top: 0;
+  left: 0;
+  height: 235px;
+  background-image: url("../images/bg-pattern-top-mobile.svg");
+  background-position: bottom left;
+}
+
+.container::after {
+  bottom: 0;
+  right: 0;
+  height: 500px;
+  background-image: url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top right;
 }
 
 .content {

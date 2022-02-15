@@ -13,3 +13,79 @@ html {
 body {
   font-family: 'Spartan', sans-serif;
 }
+
+.container {
+  min-width: 375px;
+  padding: 75px 25px;
+  background-color: white;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.content .header {
+  margin-bottom: 40px;
+  color: #937b92;
+}
+
+.content .header h1 {
+  margin-bottom: 25px;
+  color: #502050;
+  line-height: 1;
+}
+
+.content .header p {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.content .ratings {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.content .ratings .rating {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #502050;
+  background-color: #f7f2f7;
+}
+
+.content .ratings .rating .stars {
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.testimonials .testimonial {
+  margin-top: 20px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: #502050;
+}

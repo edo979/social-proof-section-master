@@ -7,6 +7,8 @@ $dark-Grayish-Magenta: hsl(303, 10%, 53%);
 $Light-Grayish-Magenta: hsl(300, 24%, 96%);
 $White: hsl(0, 0%, 100%);
 
+$border-radius: 10px;
+
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 * {
@@ -21,4 +23,61 @@ html {
 
 body {
   font-family: 'Spartan', sans-serif;
+}
+
+.container {
+  min-width: 375px;
+  padding: 75px 25px;
+  background-color: $White;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .header {
+    margin-bottom: 40px;
+    color: $dark-Grayish-Magenta;
+    h1 {
+      margin-bottom: 25px;
+      color: $very-Dark-Magenta;
+      line-height: 1;
+    }
+    p {
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+  .ratings {
+    width: 100%;
+    margin-bottom: 20px;
+    .rating {
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: $border-radius;
+      font-size: 1rem;
+      font-weight: 700;
+      color: $very-Dark-Magenta;
+      background-color: $Light-Grayish-Magenta;
+
+      .stars {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .testimonial {
+    margin-top: 20px;
+    padding: 40px 30px;
+    border-radius: $border-radius;
+    background-color: $very-Dark-Magenta;
+  }
 }
